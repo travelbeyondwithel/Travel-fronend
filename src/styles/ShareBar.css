@@ -1,0 +1,50 @@
+.share-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* gap: 15px; */
+    left: 0;
+    right: 0;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: 1px solid #888;
+    padding: 40px;
+}
+
+.share-title{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.container-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.share-bar a,
+.share-bar button{
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: none;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #243746;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.share-bar a:hover,
+.share-bar button:hover{
+    background: #c89b3c;
+    color: white;
+}

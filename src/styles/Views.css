@@ -1,0 +1,54 @@
+.views {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 20px;
+    color: #555;
+    white-space: nowrap;
+}
+
+.views-icon {
+    font-size: 20px;
+    color: #777;
+    flex-shrink: 0;
+}
+
+.views-count {
+    font-weight: 700;
+    color: #555;
+    font-size: 24px;
+}
+
+.views-label {
+    font-size: 24px;
+    font-weight: 700;
+    color: #555;
+}
+
+.views:hover .views-icon{
+    color: #555;
+}
+
+/* @media (max-width: 768px) {
+
+    .views {
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .views-icon {
+        font-size: 15px;
+    }
+} */
+
+@media (max-width: 600px) {
+
+    .views {
+        align-items: start;
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+
+    
+}

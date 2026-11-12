@@ -1,0 +1,230 @@
+/* =========================================
+    SUBCATEGORY ARTICLES PAGE
+========================================= */
+
+.subcategory-articles-page {
+    width: 100%;
+    /* min-height: 100vh; */
+}
+
+/* =========================================
+    HEADER
+========================================= */
+
+.subcategory-articles-header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 30px 55px;
+    text-align: center;
+}
+
+.subcategory-articles-header .section-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ff6b35;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.subcategory-articles-header h1 {
+    margin: 0 0 18px;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1;
+    color: #0d79bf;
+}
+
+.subcategory-articles-header p {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* =========================================
+    ARTICLES SECTION
+========================================= */
+
+.subcategory-articles-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: start;
+    padding: 20px 30px 90px;
+}
+
+/* =========================================
+    ARTICLE GRID
+========================================= */
+
+.subcategory-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* =========================================
+    ARTICLE CARD
+========================================= */
+
+.subcategory-article-card {
+    overflow: hidden;
+    border-radius: 14px;
+    background: #fff;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.subcategory-article-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.subcategory-article-card a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================================
+    IMAGE
+========================================= */
+
+.subcategory-article-image {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.subcategory-article-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.subcategory-article-card:hover
+.subcategory-article-image img {
+    transform: scale(1.05);
+}
+
+/* =========================================
+    CONTENT
+========================================= */
+
+.subcategory-article-content {
+    padding: 25px;
+}
+
+.subcategory-article-content .article-category {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.subcategory-article-card h2 {
+    margin: 0 0 13px;
+    color: #555;
+    font-size: 1.45rem;
+    line-height: 1.25;
+}
+
+.subcategory-article-content p {
+    margin: 0 0 20px;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+/* =========================================
+    READ MORE
+========================================= */
+
+/* .subcategory-article-content .read-more {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+} */
+
+/* =========================================
+   NO ARTICLES
+========================================= */
+
+.no-subcategory-articles {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.no-subcategory-articles h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.no-subcategory-articles p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .subcategory-articles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .subcategory-articles-header {
+        padding-top: 70px;
+    }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .subcategory-articles-header {
+        padding: 60px 20px 40px;
+    }
+
+    .subcategory-articles-header h1 {
+        font-size: 2.6rem;
+    }
+
+    .subcategory-articles-header p {
+        font-size: 0.95rem;
+    }
+
+    .subcategory-articles-section {
+        padding: 10px 20px 60px;
+    }
+
+    .subcategory-articles-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .subcategory-article-image {
+        height: 220px;
+    }
+
+    .subcategory-article-content {
+        padding: 22px;
+    }
+
+    .subcategory-article-card h2 {
+        font-size: 1.3rem;
+    }
+
+}

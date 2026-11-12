@@ -1,0 +1,244 @@
+.article-list-wrapper {
+    width: 100%;
+}
+
+/* =========================
+    ARTICLE GRID
+========================= */
+
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* =========================
+    ARTICLE CARD
+========================= */
+
+.article-list-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.article-list-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.article-list-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================
+    IMAGE
+========================= */
+
+.article-list-image {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.article-list-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.article-list-card:hover
+.article-list-image img {
+    transform: scale(1.04);
+}
+
+/* =========================
+    CONTENT
+========================= */
+
+.article-list-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 22px;
+}
+
+.article-list-category {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0d79bf;
+}
+
+.article-list-content h2 {
+    margin: 0 0 12px;
+
+    font-size: 22px;
+    line-height: 1.25;
+    color: #333333;
+}
+
+.article-list-content p {
+    margin: 0 0 20px;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.article-list-read {
+    margin-top: auto;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =========================
+    READ MORE
+========================= */
+
+.article-list-read{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 10px;
+    width: fit-content;
+    text-decoration: none;
+    color: #d57929;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.article-list-read:hover{
+    text-decoration: underline;
+}
+
+.article-list-read svg{
+    transition: .3s;
+}
+
+.article-list-read:hover svg{
+    transform: translateX(6px);
+}
+
+/* .article-list-read-more {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 45px;
+} */
+
+/* =========================
+    EMPTY STATE
+========================= */
+
+.article-list-empty {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.article-list-empty h2 {
+    margin-bottom: 10px;
+}
+
+.article-list-empty p {
+    margin: 0;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .article-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .article-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .article-list-card {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .article-list-link {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .article-list-image {
+        width: 130px;
+        min-width: 130px;
+        height: 130px;
+    }
+
+    .article-list-content {
+        padding: 14px;
+    }
+
+    .article-list-category {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+
+    .article-list-content h2 {
+        margin-bottom: 6px;
+
+        font-size: 17px;
+        line-height: 1.3;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .article-list-content p {
+        margin-bottom: 8px;
+
+        font-size: 13px;
+        line-height: 1.4;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .article-list-read {
+        font-size: 12px;
+    }
+
+    .article-list-read-more {
+        margin-top: 30px;
+    }
+
+}

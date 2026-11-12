@@ -1,0 +1,101 @@
+
+.buy-coffee {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    background: #d57929;
+    color: #f3f4f6;
+
+    border-radius: 30px;
+    text-decoration: none;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+    z-index: 9999;
+
+    transition: width 0.35s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Expanded state */
+
+.buy-coffee.expanded {
+    width: 210px;
+}
+
+/* Icon */
+.coffee-icon {
+    min-width: 58px;
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    flex-shrink: 0;
+}
+
+/* Text */
+.coffee-text {
+    white-space: nowrap;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    opacity: 0;
+
+    transform: translateX(-10px);
+
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Show text when expanded */
+.buy-coffee.expanded .coffee-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Hover effect */
+.buy-coffee:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+
+@media (max-width: 600px) {
+
+    .buy-coffee {
+        right: 15px;
+        bottom: 15px;
+
+        width: 54px;
+        height: 54px;
+
+    }
+
+    .coffee-icon {
+        min-width: 54px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .buy-coffee.expanded {
+        width: 195px;
+    }
+
+    .coffee-text {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,269 @@
+    /* ================================
+    DESTINATIONS PAGE
+    ================================ */
+
+.destinations-page {
+    width: 100%;
+    padding: 20px 80px;
+    background: #fafafa;
+}
+    
+    /* ================================
+        Intro
+    ================================ */
+    
+.destinations-intro {
+    text-align: start;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 1em;
+}
+
+.destinations-eyebrow {
+    margin-bottom: 10px;
+
+    color: #0d79bf;
+
+    font-size: .85rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.destinations-intro h1 {
+    max-width: 540px;
+
+    margin: 0 0 24px;
+
+    color: #3a3a3a;
+
+    font-size: clamp(34px, 3.3vw, 50px);
+
+    line-height: 1.12;
+
+    font-weight: 600;
+
+    letter-spacing: -0.8px;
+}
+
+.destinations-intro p {
+    max-width: 520px;
+
+    margin: 0 0 30px;
+
+    color: #59616a;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+.continent-title {
+    margin: 0 0 55px;
+    text-align: center;
+
+    font-size: clamp(1.5rem, 7vw, 3.5rem);
+    font-weight: 300;
+
+    letter-spacing: 2px;
+    line-height: 1;
+    color: #0d79bf;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+}
+
+/* =========================================
+    COUNTRY GRID
+========================================= */
+
+.country-grid {
+    display: grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+/* =========================================
+    COUNTRY CARD
+========================================= */
+
+.country-card {
+    background: #fff;
+
+    overflow: hidden;
+
+    border: 1px solid #e8e8e8;
+    
+
+    transition: transform .3s ease, box-shadow 0.3s ease;
+    border-radius: 50px;
+    margin-bottom: 1em;
+}
+
+/* =========================
+    IMAGE
+========================= */
+.country-image {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 190px;
+
+    overflow: hidden;
+}
+
+.country-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s ease;
+}
+
+/* =========================================
+    DARK OVERLAY
+========================================= */
+
+.country-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.18);
+
+    transition:
+        background 0.4s ease;
+}
+
+.country-overlay h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    font-weight: 300;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================
+    HOVER
+========================================= */
+
+.country-card:hover .country-image img {
+    transform: scale(1.05);
+}
+
+/* =========================================
+    Destination CTA
+========================================= */
+
+.destinations-cta {
+    text-align: start;
+    border-top: 1px solid #dddddd;
+    margin-top: 1em;
+}
+
+.destinations-cta h2{
+    max-width: 540px;
+
+    margin: 0 0 24px;
+
+    color: #3a3a3a;
+
+    font-size: clamp(34px, 3.3vw, 50px);
+
+    line-height: 1.12;
+
+    font-weight: 600;
+
+    letter-spacing: -0.8px;
+}
+
+.destinations-cta p {
+    max-width: 520px;
+
+    margin: 0 0 30px;
+
+    color: #59616a;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+.destinations-cta-button{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    text-decoration: none;
+    color: #0d79bf;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.destinations-cta-button:hover{
+    text-decoration: underline;
+}
+
+.destinations-cta-button svg{
+    transition: .3s;
+}
+
+.destinations-cta-button:hover svg{
+    transform: translateX(6px);
+}
+
+/* =========================================
+    MOBILE
+========================================= */
+@media (max-width: 600px) {
+
+    .destinations-page {
+        padding: 10px 20px;
+    }
+
+    .country-grid {
+        grid-template-columns:
+        repeat(1, 1fr);
+        gap: 12px;
+    }
+
+    .destinations-intro h1 {
+        font-size: 25px;
+    }
+
+    .destinations-intro p {
+        display: none;
+    }
+
+    .country-card {
+        border-radius: 25px;
+    }
+    
+    .country-image {
+        height: 145px;
+    }
+
+    .country-overlay {
+        padding: 15px;
+    }
+}

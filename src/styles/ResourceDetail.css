@@ -1,0 +1,464 @@
+/* =========================================================
+    RESOURCE DETAIL PAGE
+========================================================= */
+
+.resource-detail {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 40px 24px 100px;
+
+    background: #fafafa;
+}
+
+/* =========================================================
+    HERO IMAGE
+========================================================= */
+
+.resource-detail__hero {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #e9e6df;
+
+    margin-bottom: 48px;
+
+    border: 1px solid #e4e0d8;
+}
+
+.resource-detail__hero-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-height: 250px;
+
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.resource-detail__hero-placeholder {
+    width: 100%;
+    min-height: 220px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8e4da,
+            #d9d5ca
+        );
+
+    color: #5d665b;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+}
+
+/* =========================================================
+    CONTENT
+========================================================= */
+
+.resource-detail__content {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+/* =========================================================
+    HEADER
+========================================================= */
+
+.resource-detail__header {
+    margin-bottom: 36px;
+}
+
+.resource-detail__category {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #0d79bf;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+}
+
+.resource-detail__header h1 {
+    margin: 0;
+
+    color: #3a3a3a;
+
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+
+    line-height: 1.02;
+
+    font-weight: 600;
+
+    letter-spacing: -0.04em;
+}
+
+/* =========================================================
+    LOCATION
+========================================================= */
+
+.resource-detail__location {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 20px 0 0;
+
+    color: #909090;
+
+    font-size: 1rem;
+}
+
+.resource-detail__location svg {
+    flex-shrink: 0;
+
+    color: #0d79bf;
+}
+
+/* =========================================================
+    CONTACT INFORMATION
+========================================================= */
+
+.resource-detail__contact {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    padding: 28px 0;
+
+    border-top: 1px solid #e6e2da;
+    border-bottom: 1px solid #e6e2da;
+
+    margin-bottom: 38px;
+}
+
+.resource-detail__contact-item {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #3a3a3a;
+
+    text-decoration: none;
+
+    font-size: 0.98rem;
+    line-height: 1.4;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.resource-detail__contact-item:hover {
+    color: #0d79bf;
+
+    opacity: 0.9;
+
+    transform: translateY(-1px);
+}
+
+.resource-detail__contact-item svg {
+    flex-shrink: 0;
+
+    color: #0d79bf;
+}
+
+/* =========================================================
+    DESCRIPTION
+========================================================= */
+
+.resource-detail__description {
+    margin-bottom: 40px;
+}
+
+.resource-detail__description p {
+    margin: 0;
+
+    color: #3a3a3a;
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+
+    text-align: start;
+}
+
+/* =========================================================
+    BOOKING BUTTON
+========================================================= */
+
+.resource-detail__booking {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 52px;
+
+    margin-bottom: 18px;
+
+    padding: 0 28px;
+
+    border: 1px solid #0d79bf;
+
+    border-radius: 999px;
+
+    background: #0d79bf;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.resource-detail__booking:hover {
+    background: #09679f;
+
+    border-color: #09679f;
+
+    opacity: 0.95;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+    MAIN VIEW BUTTON
+========================================================= */
+
+.resource-detail__view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    min-height: 64px;
+
+    margin-top: 12px;
+
+    border: 1px solid #0d79bf;
+    border-radius: 0;
+
+    background: #0d79bf;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.resource-detail__view:hover {
+    background: #09679f;
+
+    border-color: #09679f;
+
+    opacity: 0.95;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+    BACK LINK
+========================================================= */
+
+.resource-detail__back {
+    display: inline-flex;
+    align-items: center;
+
+    margin-top: 30px;
+    gap: .85em;
+
+    color: #909090;
+
+    text-decoration: none;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.resource-detail__back:hover {
+    color: #0d79bf;
+
+    transform: translateX(-2px);
+}
+
+/* =========================================================
+    LOADING / ERROR
+========================================================= */
+
+.resource-detail__state {
+    min-height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    color: #909090;
+
+    text-align: center;
+
+    font-size: 1.1rem;
+}
+
+.resource-detail__state--error {
+    color: #a33;
+}
+
+/* =========================================================
+    TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .resource-detail {
+        padding: 24px 18px 90px;
+    }
+
+    .resource-detail__hero {
+        margin-bottom: 32px;
+    }
+
+    .resource-detail__hero-image {
+        max-height: 480px;
+    }
+
+    .resource-detail__header {
+        margin-bottom: 28px;
+    }
+
+    .resource-detail__header h1 {
+        font-size: 2.8rem;
+    }
+
+    .resource-detail__description p {
+        font-size: 1.05rem;
+
+        line-height: 1.7;
+    }
+
+    .resource-detail__contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resource-detail__view {
+        min-height: 60px;
+    }
+}
+
+/* =========================================================
+    MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .resource-detail {
+        padding: 18px 16px 80px;
+    }
+
+    .resource-detail__hero {
+        margin-bottom: 28px;
+    }
+
+    .resource-detail__hero-image {
+        max-height: 420px;
+    }
+
+    .resource-detail__hero-placeholder {
+        min-height: 280px;
+    }
+
+    .resource-detail__header h1 {
+        font-size: 2.2rem;
+
+        line-height: 1.08;
+    }
+
+    .resource-detail__category {
+        font-size: 0.9rem;
+    }
+
+    .resource-detail__location {
+        font-size: 0.9rem;
+    }
+
+    .resource-detail__description p {
+        font-size: 1rem;
+
+        line-height: 1.7;
+    }
+
+    .resource-detail__contact {
+        gap: 18px;
+
+        padding: 22px 0;
+    }
+
+    .resource-detail__contact-item {
+        font-size: 0.9rem;
+    }
+
+    .resource-detail__view {
+        min-height: 48px;
+        width: 50%;
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+
+    .resource-detail__booking {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+}
