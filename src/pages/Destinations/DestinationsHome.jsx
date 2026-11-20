@@ -13,7 +13,7 @@ function DestinationsHome() {
 
     useEffect(() => {
 
-        fetch('http://127.0.0.1:8000/api/destinations/')
+        fetch('http://travel-backend-pvq4.onrender.com/api/destinations/')
             .then(response => response.json())
             .then(data => {
                 setDestinations(data);

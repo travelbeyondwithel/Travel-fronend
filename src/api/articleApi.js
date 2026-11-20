@@ -4,7 +4,8 @@ import { getBrowserId } from '../utils/browserId';
 
 const API = axios.create({
 
-    baseURL: 'http://127.0.0.1:8000/api/'
+    baseURL: 'http://travel-backend-pvq4.onrender.com/api/'
+    // baseURL: 'http://127.0.0.1:8000/api/'
 
 });
 
