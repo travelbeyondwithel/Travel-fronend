@@ -11,7 +11,7 @@ import {
     FaInstagram,
     FaYoutube,
     FaTiktok,
-    FaXTwitter,
+    FaPinterest,
 } from 'react-icons/fa6';
 
 import { searchSite } from '../../api/articleApi';
@@ -236,20 +236,20 @@ function Navbar() {
                     {/* SOCIAL MEDIA */}
                     <div className="navbar-socials">
 
-                        <a href="#" aria-label="Instagram">
+                        <a href="https://www.instagram.com/travelbeyondwithel/" target="_blank" aria-label="Instagram">
                             <FaInstagram />
                         </a>
 
-                        <a href="#" aria-label="YouTube">
+                        <a href="https://www.youtube.com/@travelbeyondwithel" target="_blank" aria-label="YouTube">
                             <FaYoutube />
                         </a>
 
-                        <a href="#" aria-label="TikTok">
+                        <a href="https://www.tiktok.com/@travelbeyondwithel" target="_blank" aria-label="TikTok">
                             <FaTiktok />
                         </a>
 
-                        <a href="#" aria-label="X">
-                            <FaXTwitter />
+                        <a href="https://www.pinterest.com/travelbeyondwithel/" target="_blank" aria-label="Pinterest">
+                            <FaPinterest />
                         </a>
 
                     </div>

@@ -13,7 +13,7 @@ function DestinationsHome() {
 
     useEffect(() => {
 
-        fetch('http://travel-backend-pvq4.onrender.com/api/destinations/')
+        fetch('https://travel-backend-pvq4.onrender.com/api/destinations/')
             .then(response => response.json())
             .then(data => {
                 setDestinations(data);

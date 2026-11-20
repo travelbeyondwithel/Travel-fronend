@@ -1,6 +1,6 @@
 const API_ORIGIN =
     import.meta.env.VITE_API_ORIGIN ||
-    'http://travel-backend-pvq4.onrender.com/';
+    'https://travel-backend-pvq4.onrender.com/';
 
 export function getMediaUrl(path) {
     if (!path) {
